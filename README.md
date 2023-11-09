@@ -1,6 +1,11 @@
 # Desarrollo Web en Entorno Cliente
 Utilización de las características específicas de lenguajes y entornos de programación en el desarrollo de aplicaciones para clientes web.
 
+Indicaciones:
+- Los ejercicios pueden tener más de una solución, busca la óptima, teniendo en cuenta el número de instrucciones, sentencias y estructuras, etc.
+- Utilizar un único fichero ".html".
+
+Crear arhivo html-
 ```
 <!DOCTYPE html>
 <html lang="es">
@@ -26,4 +31,4 @@ Ejercicio 1
 Ejercicio 2
 - Realiza un script para que pida al usuario dos números y solicite que operación quiere realizar (1 Sumar, 2 Restar, 3 Multiplicar, 4 Dividir). 
 - Finalmente muestre el resultado de la operación e indique si quiere repetir la operación (S/N). 
-- El programa finaliza cuando el usuario introduce N.
+- El programa finaliza cuando el usuario introduce "N".
