@@ -8,3 +8,8 @@ Ejercicio 1
 - Ejemplo de mensaje “Hola, NOMBRE APELLIDO.
 - Eres mayor de edad” o “Hola, NOMBRE APELLIDO.
 - Eres menor de edad”.
+
+Ejercicio 2
+- Realiza un script para que pida al usuario dos números y solicite que operación quiere realizar (1 Sumar, 2 Restar, 3 Multiplicar, 4 Dividir). 
+- Finalmente muestre el resultado de la operación e indique si quiere repetir la operación (S/N). 
+- El programa finaliza cuando el usuario introduce N.
