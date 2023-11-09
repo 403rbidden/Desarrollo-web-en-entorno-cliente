@@ -1,6 +1,20 @@
 # Desarrollo Web en Entorno Cliente
 Utilización de las características específicas de lenguajes y entornos de programación en el desarrollo de aplicaciones para clientes web.
 
+```
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desarrollo web en entorno cliente</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+    </body>
+</html>
+```
+
 Ejercicio 1
 - Realiza un script que solicite el nombre, apellido y edad.
 - Salude a su nombre completo y muestre si es mayor de edad o no.
