@@ -2,10 +2,11 @@
 Utilización de las características específicas de lenguajes y entornos de programación en el desarrollo de aplicaciones para clientes web.
 
 Indicaciones:
-- Los ejercicios pueden tener más de una solución, busca la óptima, teniendo en cuenta el número de instrucciones, sentencias y estructuras, etc.
+- Los ejercicios pueden tener más de una solución.
+Buscar la manera más óptima, teniendo en cuenta el número de instrucciones, sentencias y estructuras, etc.
 - Utilizar un único fichero ".html".
 
-Crear arhivo html-
+Crear arhivo html.
 ```
 <!DOCTYPE html>
 <html lang="es">
