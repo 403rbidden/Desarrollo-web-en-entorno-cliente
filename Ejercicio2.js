@@ -1,3 +1,5 @@
+//CALCULADORA
+
 do {
     // Solicitar dos números al usuario
     var numero1 = parseFloat(prompt("Ingrese el primer número:"));
