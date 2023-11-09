@@ -8,7 +8,7 @@ Utilización de las características específicas de lenguajes y entornos de pro
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Desarrollo web en entorno cliente</title>
-        <script src="script.js"></script>
+        <script src="Ruta\NombreDelScript.js"></script>
     </head>
     <body>
     </body>
