@@ -3,7 +3,7 @@ Utilización de las características específicas de lenguajes y entornos de pro
 
 Indicaciones:
 - Los ejercicios pueden tener más de una solución.
-Buscar la manera más óptima, teniendo en cuenta el número de instrucciones, sentencias y estructuras, etc.
+Buscar la manera más óptima teniendo en cuenta el número de instrucciones, sentencias y estructuras, etc.
 - Utilizar un único fichero ".html".
 
 Crear arhivo html.
