@@ -2,6 +2,13 @@ do {
     // Solicitar dos números al usuario
     var numero1 = parseFloat(prompt("Ingrese el primer número:"));
     var numero2 = parseFloat(prompt("Ingrese el segundo número:"));
+    
+    // Verificar si las entradas son números válidos
+    if (isNaN(numero1) || isNaN(numero2)) {
+        alert("Por favor, ingrese únicamente números.");
+        continue; 
+        // Reiniciar el bucle si las entradas no son válidas. Por ejemplo, letras.
+    }
 
     // Solicitar la operación deseada
     var operacion = parseInt(prompt("Seleccione la operación:\n1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir"));
@@ -17,6 +24,7 @@ do {
         case 2:
             resultado = numero1 - numero2;
             break;
+            // No es necesario comprobar números negativos, lo tiene en cuenta.
         case 3:
             resultado = numero1 * numero2;
             break;
