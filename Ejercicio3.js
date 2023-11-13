@@ -14,7 +14,7 @@ function obtenerLetra(numero) {
     return letras.charAt(resto);
 }
 
-// Función para validar eL DNI
+// Función para validar el DNI
 function validarDNI(DNI) {
     // Expresión regular para validar el formato
     const formatoValido = /^\d{8}[TRWAGMYFPDXBNJZSQVHLCKE]$/;
