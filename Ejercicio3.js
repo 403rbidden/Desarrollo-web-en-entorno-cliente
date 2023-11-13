@@ -1,3 +1,5 @@
+// COMPROBADOR DNI
+
 // Solicitar DNI al usuario
 const DNIUsuario = prompt("Ingresa tu DNI (con letra mayuscula y sin espacios ni guiones):");
 // Las comillas dobles no permiten la interpolación de variables directamente 
