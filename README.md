@@ -7,7 +7,7 @@ Indicaciones:
 Buscar la manera más óptima teniendo en cuenta el número de instrucciones, sentencias y estructuras, etc.
 - Utilizar un único fichero ".html".
 
-Crear arhivo html.
+Crear arhivo HTML.
 ```
 <!DOCTYPE html>
 <html lang="es">
