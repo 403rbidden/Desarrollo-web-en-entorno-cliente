@@ -48,6 +48,6 @@ const esValido = validarDNI(DNIUsuario);
  alert(`El DNI ${DNIUsuario} no es valido.`);
  } */
 
-const mensaje = esValido ? `El DNI ${DNIUsuario} es válido.` : `El DNI ${DNIUsuario} no es válido.`;
+const mensaje = esValido ? `El DNI ${DNIUsuario} es valido.` : `El DNI ${DNIUsuario} no es valido.`;
 alert(mensaje);
 // Las comillas invertidas permiten la interpolación de variables o expresiones mediante ${}
