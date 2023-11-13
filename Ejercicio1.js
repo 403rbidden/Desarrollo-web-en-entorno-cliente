@@ -1,3 +1,5 @@
+// COMPROBADOR MAYORÍA DE EDAD
+
 try {
     // Solicitar nombre
     var nombre = prompt("Ingresa tu nombre:");
