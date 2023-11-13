@@ -1,4 +1,4 @@
-ry {
+try {
     // Solicitar nombre
     var nombre = prompt("Ingresa tu nombre:");
 
@@ -12,8 +12,8 @@ ry {
 
     // Verificar si se ingresó un apellido válido (solo letras)
    if (!/^[a-zA-Z\u00C0-\u024F\u00F1\u00D1]+$/.test(apellido)) {
-       // Esta expresión regular acepta letras (mayúsculas y minúsculas), espacios y caracteres acentuados, incluyendo la "ñ" y "Ñ".
-       // Representan un rango de caracteres Unicode
+       // Esta expresión regular acepta letras (mayúsculas y minúsculas), espacios y caracteres acentuados, incluyendo la "ñ" y "Ñ"
+       // Representa un rango de caracteres Unicode
         throw new Error("Debes ingresar un apellido valido (solo letras).");
     }
 
