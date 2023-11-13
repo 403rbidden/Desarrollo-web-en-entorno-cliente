@@ -36,7 +36,8 @@ Ejercicio 2
 - El programa finaliza cuando el usuario introduce "N".
 
 Ejercicio 3
-Realiza un script para validar un DNI y que muestre si es correcto o no. Un DNI cumple las siguientes características:
+Realiza un script para validar un DNI y que muestre si es correcto o no. 
+Un DNI cumple las siguientes características:
 - Está formado por un total de 8 dígitos y una letra. 
 - Los dígitos pueden tomar el valor de 0 a 99999999.
 - La letra puede ser T, R, W, A, G, M, Y, F, P, D, X, B, N, J, Z, S, Q, V, H, L, C, K, E.
