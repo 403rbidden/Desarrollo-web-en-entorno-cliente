@@ -26,7 +26,7 @@ function validarDNI(DNI) {
 
     // Extraer los dígitos y la letra
     const digitos = DNI.substring(0, 8);
-    const letraProvida = DNI.charAt(8).toUpperCase();
+    const letraIntroducidaPorElUsuario = DNI.charAt(8).toUpperCase();
 
     // Convertir los dígitos a un número
     const numero = parseInt(digitos, 10);
@@ -35,7 +35,7 @@ function validarDNI(DNI) {
     const letraCalculada = obtenerLetra(numero);
 
     // Validar si la letra proporcionada es la correcta
-    return letraProvida === letraCalculada;
+    return letraIntroducidaPorElUsuario === letraCalculada;
 }
 
 // Validar el DNI ingresado
