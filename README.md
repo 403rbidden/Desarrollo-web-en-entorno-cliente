@@ -1,4 +1,17 @@
 # Desarrollo Web en Entorno Cliente
+
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+</style>
+
 Utilización de las características específicas de lenguajes y entornos de programación en el desarrollo de aplicaciones para clientes web.
 
 Indicaciones:
