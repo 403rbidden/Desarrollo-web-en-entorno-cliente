@@ -79,6 +79,33 @@ Ejercicio 5
 
 Realiza un script que al pulsar un botón, solicite una fecha de nacimiento en el formato dd/mm/yyyy y muestre la edad que tiene.
 
+```
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Desarrollo web en entorno cliente</title>
+    </head>
+    <body>
+
+        <h1>Calculadora de edad</h1>
+
+        <label for="fechaNacimiento">Fecha de nacimiento (dd/mm/aaaa): </label>
+        <input type="text" id="fechaNacimiento" placeholder="dd/mm/aaaa">
+        <button onclick="calcularEdad()">Calcular edad</button>
+
+        <script src="Ejercicio5.js"></script>
+
+        <!-- Elemento para mostrar el resultado de la edad -->
+        <p id="resultado"></p>
+
+        <!-- Elemento para mostrar mensajes de error con estilo de color rojo -->
+        <p id="mensajeError" style="color: red;"></p>
+
+    </body>
+</html>
+```
+
 Ejercicio 6  
 
 - Realiza un script solicitando un número entre un rango de 1 a 50. 
