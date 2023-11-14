@@ -4,22 +4,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Desarrollo web en entorno cliente</title>
-        <!-- <script src="Ejercicio1.js"></script> -->
+
         <script>
-            // Solicitar nombre
-            var nombre = prompt("Ingresa tu nombre:");
+            // COMPROBADOR MAYORÍA DE EDAD
 
-            // Solicitar apellido
-            var apellido = prompt("Ingresa tu apellido:");
+            try {
+                // Solicitar nombre
+                var nombre = prompt("Ingresa tu nombre:");
 
-            // Solicitar edad y convertir a número
-            var edad = parseInt(prompt("Ingresa tu edad:"));
+                // Verificar si se ingresó un nombre válido (solo letras)
+                if (!/^[a-zA-ZñÑ\s]+$/.test(nombre)) {
+                    throw new Error("Debes ingresar un nombre valido (solo letras sin acentos, puede ser compuesto).");
+                }
 
-            // Determinar si es mayor de edad utilizando un operador ternario
-            var mensaje = "Hola, " + nombre + " " + apellido + ". Eres " + (edad >= 18 ? "mayor" : "menor") + " de edad.";
+                // Solicitar apellido
+                var apellido = prompt("Ingresa tu primer apellido:");
 
-            // Mostrar el mensaje
-            alert(mensaje);
+                // Verificar si se ingresó un apellido válido (solo letras)
+                if (!/^[a-zA-ZñÑ]+$/.test(apellido)) {
+                    throw new Error("Debes ingresar un apellido valido (solo letras sin acentos).");
+                }
+
+                // Solicitar edad y convertir a número
+                var edad = parseInt(prompt("Ingresa tu edad:"));
+
+                // Verificar si se ingresó una edad válida (número entre 0 y 130)
+                if (isNaN(edad) || edad < 0 || edad > 130) {
+                    throw new Error("Debes ingresar una edad valida (numero entre 0 y 130 años).");
+                }
+
+                // Determinar si es mayor de edad utilizando un operador ternario
+                var mensaje = "Hola, " + nombre + " " + apellido + ". Eres " + (edad >= 18 ? "mayor" : "menor") + " de edad.";
+
+                // Mostrar el mensaje
+                alert(mensaje);
+            } catch (error) {
+                // Capturar y mostrar errores
+                alert("Error: " + error.message);
+            }
+
         </script>
     </head>
     <body>
