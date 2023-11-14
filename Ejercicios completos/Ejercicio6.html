@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Desarrollo web en entorno cliente</title>
+    </head>
+
+    <body>
+        <h1>🧮 Operaciones con números</h1>
+
+        <label for="numero">Introduce un número entre 1 y 50:</label>
+        <!-- El type="number" en el input restringe la entrada a solo valores numéricos-->
+        <input type="number" id="numero" min="1" max="50">
+        <button onclick="calcularOperaciones()">Calcular</button>
+
+        <script>
+            function calcularOperaciones() {
+                // Obtener el valor del número ingresado por el usuario
+                const numero = parseInt(document.getElementById('numero').value);
+
+                // Verificar que el número esté en el rango permitido
+                //No se ha incluido la condición isNaN(numero) porque ya está delimitado en el input type="number"
+                if (numero < 1 || numero > 50) {
+                    document.getElementById('resultadoError').innerHTML = `<p>Por favor, ingrese un número válido que esté comprendido entre 1 y 50.</p>
+                            <button onclick="limpiarResultados() ">Limpiar</button>`;
+                    return;
+                }
+
+                // Inicializar variable para la suma
+                let suma = 0;
+                // Inicializar variable para los números pares
+                let cantidadPares = 0;
+                // Inicializar variable para los números impares
+                let cantidadImpares = 0;
+
+                // Calcular la suma, la cantidad de números pares e impares
+                for (let i = 1; i <= numero; i++) {
+                    suma += i;
+                    // El operador módulo devuelve el resto de la división entre dos números
+                    // Se divide "i" entre 2 para comprobar si es par
+                    if (i % 2 === 0) {
+                        // Si el resultado es 0, el número es par
+                        cantidadPares++;
+                    } else {
+                        // Si el resultado es diferente a 0, es impar
+                        cantidadImpares++;
+                    }
+                }
+
+                // Calcular la media
+                const media = suma / numero;
+
+                // Mostrar los resultados
+                document.getElementById('resultado').innerHTML = `
+                    <p style="font-weight: bold;">Conclusiones:</p>
+
+                    <ul>
+                        <li>La suma de todos los números comprendidos entre 1 y ${numero} es de ${suma}.</li>
+                        <li>La media de todos los números es ${media}.</li>
+                        <li>Hay un total de ${cantidadPares} números pares.</li>
+                        <li>Y un total de ${cantidadImpares} números impares.</li>
+                    </ul>
+
+                    <button onclick="limpiarResultados()">Limpiar</button>
+                `;
+            }
+
+            // Con el argumento "reload(true)" se recarga la página desde el servidor
+            /* Se ha utiizado el método "location.reload();" por haber utilizado previamente 
+             la palabra clave "let" al declarar las varaibles*/
+            function limpiarResultados() {
+                window.location.reload(true);
+            }
+        </script>
+
+        <p id="resultado"></p>
+
+        <!--Mostrar mensaje de error-->
+        <p id="resultadoError" style="color:red;"></p>
+    </body>
+
+</html>
