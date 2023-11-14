@@ -85,6 +85,6 @@ Ejercicio 6
 - Muestra en un solo mensaje, la suma de todos los numero empezando desde el 1 hasta el número indicando. 
 - La media y cuantos números son pares e impares.  
 
-Por ejemplo:
+Por ejemplo:   
 Si el usuario introduce 5, se mostrará, La suma de todos los números es: 15, La media de todos los números es: 3, Hay un total de números pares de: 2 y Hay un total de números impares de 3.
 
