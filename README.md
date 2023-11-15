@@ -88,7 +88,7 @@ Realiza un script que al pulsar un botón, solicite una fecha de nacimiento en e
     </head>
     <body>
 
-        <h1>Calculadora de edad</h1>
+        <h1>💾 Calculadora de edad</h1>
 
         <label for="fechaNacimiento">Fecha de nacimiento (dd/mm/aaaa): </label>
         <input type="text" id="fechaNacimiento" placeholder="dd/mm/aaaa">
